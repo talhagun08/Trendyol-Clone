@@ -19,6 +19,7 @@ header {
     width: 100%;
 }
 
+/* Top Banner*/
 header .top-banner{
     width: 100%;
     text-align: center;
@@ -39,8 +40,9 @@ header .top-banner .top-banner-container img{
     height: 100%;
 }
 
+/*Header Main*/
 .headerMain{
-    max-width: 1400px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 10px 20px;
 }
@@ -62,4 +64,77 @@ header .top-banner .top-banner-container img{
 }
 .headerMain .wrapper .right a:hover{
     opacity: 1;
+}
+
+.headerMain .sticky-header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.headerMain .header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.headerMain .header-wrapper .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+ .header-container .logo{
+    text-align: center;
+    width: 150px;
+   
+    
+}
+
+.header-container .search-bar{
+   
+    width: 600px;
+    margin: 0 20px;
+    position: relative;
+}
+.header-container .search-bar input{
+    width: 100%;
+    padding: 15px 40px 10px 15px;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 6px;
+}
+.search-bar i {
+    position: absolute;
+    right: 15px;  /* Sağ kenara yasla */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #F27A1A;
+    font-size: 16px;
+    cursor: pointer;
+}
+.header-container .account-navigator {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.account-navigator  span{
+    padding-left: 8px;
+    font-size: 0.9rem;
+    
+}
+.account-navigator .user, 
+.account-navigator .fav, 
+.account-navigator .basket {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out; 
+}
+.account-navigator .user:hover,
+.account-navigator .fav:hover,
+.account-navigator .basket:hover {
+    color: #F27A1A;
 }
