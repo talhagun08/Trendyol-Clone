@@ -138,3 +138,57 @@ header .top-banner .top-banner-container img{
 .account-navigator .basket:hover {
     color: #F27A1A;
 }
+
+/*Navbar*/
+nav{
+   width: 100%;
+   padding: 10px;
+    border-bottom: 1px solid #F3F3F3;
+    
+    
+}
+nav .container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+nav .catalog {
+    display: flex;
+    gap: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+nav .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.9rem;
+   
+    
+}
+
+nav span{
+    font-size: 0.7rem;
+    background-color: #DC2E2E;
+    color: #F3F3F3;
+    padding: 1px 5px;
+    border-radius: 32px;
+}
+nav .active{
+    color: #F27A1A;
+   
+}
+nav .list li {
+    position: relative;
+    cursor: pointer;
+}
+
+nav .list li:hover {
+    color: #F27A1A;
+}
