@@ -192,3 +192,53 @@ nav .list li {
 nav .list li:hover {
     color: #F27A1A;
 }
+
+/*Section*/
+section{
+    margin-top: 45px;
+}
+/*Main Container*/
+.main-container{
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+    /* background-color: red; */
+    
+}
+.main-container .slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+.slider .item{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    height: 120px;
+    width: 115px;
+    
+    color: #33363F;
+  
+}
+.slider .item:hover{
+    color: #F27A1A;
+    
+}
+.item img {
+    width: 68px;
+    height: 68px;
+    
+   
+}
+
+.item span{
+    height: 100%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 15px;
+}
