@@ -71,7 +71,7 @@ header .top-banner .top-banner-container img{
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 10px 0;
+    padding-bottom: 10px;
 }
 
 .headerMain .header-wrapper{
