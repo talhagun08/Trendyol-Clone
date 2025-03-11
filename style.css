@@ -259,3 +259,37 @@ section{
     width: 100%;
     height: 100%;
 }
+
+/*Widget*/
+.product-container{
+    background-image: url(https://cdn.dsmcdn.com/homepage/prod/2025-03-11/0fc7d6ad-2047-400f-a7a9-14405e4fd7ae.png);
+    max-width: 1200px;
+    height: 500px;
+    border-radius: 10px;
+}
+.header-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    font-size: 1.1rem;
+    color: black;
+}
+.header-container .navigator a{
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out, border-radius 0.2s ease-in;
+    text-decoration: none; 
+   
+}
+.header-container .navigator a:hover{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+}
+.navigator a i{
+    font-size: 0.8rem;
+}
