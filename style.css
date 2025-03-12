@@ -421,7 +421,7 @@ section{
     align-items: center;
     justify-content: space-around;
     margin-top: 15px;
-    height: 300px;
+    height: 220px;
 }
 .image-container .images{
     width: 380px;
@@ -435,3 +435,56 @@ section{
     width: 102%;
     height: 102%;
 }
+/*Category*/
+.category-container{
+    width: 100%;
+}
+.category-container .category-header{
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.category-container .category{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.category a img{
+    width: 185px;
+    border-radius: 10px;
+}
+
+/*Brand*/
+.brand-container{
+    width: 100%;
+}
+.brand-container .brand-header{
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.brand-container .brand{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.brand .brand-item{
+    border: 1px solid #666666;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in;
+}
+.brand a img{
+    width: 117px;
+    height: 117px;
+    border-radius: 10px;
+   
+}
+.brand .brand-item:hover{
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/*Category Footer*/
