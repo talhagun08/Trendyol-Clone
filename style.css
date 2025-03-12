@@ -229,12 +229,18 @@ section{
 .slider .item:hover{
     color: #F27A1A;
     
+    
 }
 .item img {
     width: 68px;
     height: 68px;
+    border: 1px solid transparent;
+    border-radius: 50%;
     
    
+}
+.item img:hover{
+    border: 1px solid #F27A1A;
 }
 
 .item span{
