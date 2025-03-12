@@ -428,9 +428,10 @@ section{
 }
 .images img{
     height: 100%;
-    width: 95%;
+    width: 100%;
     transition: width 0.3s ease-in;
 }
 .images img:hover{
-    width: 100%;
+    width: 102%;
+    height: 102%;
 }
