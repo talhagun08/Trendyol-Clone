@@ -7,50 +7,54 @@ li.forEach(item => {
 });
 
 
-const sliders = document.querySelectorAll('.product-container');
-
-sliders.forEach(slider => {
+document.querySelectorAll('.product-container').forEach(slider => {
     const slideLeftButton = slider.querySelector('.slide-left');
     const slideRightButton = slider.querySelector('.slide-right');
     const itemContainer = slider.querySelector('.item-container');
-    const productWidth = 200; // Her bir ürünün genişliği
+    const products = Array.from(itemContainer.querySelectorAll('.product'));
+    console.log(products);
+    
+    const productWidth = products[0].offsetWidth ; // Ürün genişliği + margin
     const productsToScroll = 4; // Aynı anda kaydırılacak ürün sayısı
     const scrollAmount = productWidth * productsToScroll; // Kaydırma miktarı
+    let currentPosition = 0; 
 
-    
     slideRightButton.addEventListener('click', function() {
-        itemContainer.scrollBy({
-            left: scrollAmount, 
-            behavior: 'smooth' 
+        const maxScroll = (products.length * productWidth) - itemContainer.clientWidth;
+
+        if (currentPosition + scrollAmount < maxScroll) {
+            currentPosition += scrollAmount;
+        } else {
+            currentPosition = maxScroll;
+        }
+
+        products.forEach(product => {
+            product.style.transform = `translateX(-${currentPosition}px)`;
+            product.style.transition = 'transform 0.5s ease-in-out';
         });
 
-       
         slideLeftButton.style.display = 'block';
     });
 
-    
     slideLeftButton.addEventListener('click', function() {
-        itemContainer.scrollBy({
-            left: -scrollAmount, 
-            behavior: 'smooth' 
+        if (currentPosition - scrollAmount > 0) {
+            currentPosition -= scrollAmount;
+        } else {
+            currentPosition = 0;
+        }
+
+        products.forEach(product => {
+            product.style.transform = `translateX(-${currentPosition}px)`;
+            product.style.transition = 'transform 0.5s ease-in-out';
         });
 
-        
-        if (itemContainer.scrollLeft === 0) {
+        if (currentPosition === 0) {
             slideLeftButton.style.display = 'none';
         }
     });
 
-    
-    itemContainer.addEventListener('scroll', function() {
-        if (itemContainer.scrollLeft === 0) {
-            slideLeftButton.style.display = 'none';
-        } else {
-            slideLeftButton.style.display = 'block';
-        }
-    });
+    slideLeftButton.style.display = 'none'; 
 });
-
 /*Countdown*/
 const countdownTime =  1 * 60 * 60 + 25 * 60 + 40;
 
