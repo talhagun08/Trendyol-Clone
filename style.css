@@ -553,4 +553,33 @@ section{
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-/*Category Footer*/
+/*Bubble*/
+.bubble-container{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 300px;
+    
+
+}
+.bubble-container a {
+    color: #666666;
+    padding: 13px 14px;
+    border: 1px solid #33363F;
+    border-radius: 50px;
+    transition: color, border 0.2s ease-in-out;
+
+}
+.bubble-container a:hover{
+    color: #F27A1A;
+    border: 1px solid #F27A1A;
+}
+.bubble-container h1{
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
