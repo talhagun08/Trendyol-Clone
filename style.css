@@ -656,6 +656,7 @@ section{
     margin-bottom: 15px;
     color: #333333;
     font-size: 15px;
+    cursor: pointer;
 }
 .footer-section select{
     padding: 8px 35px;

@@ -55,6 +55,7 @@ document.querySelectorAll('.product-container').forEach(slider => {
 
     slideLeftButton.style.display = 'none'; 
 });
+
 /*Countdown*/
 const countdownTime =  1 * 60 * 60 + 25 * 60 + 40;
 
