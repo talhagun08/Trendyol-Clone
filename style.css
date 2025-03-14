@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Albert Sans", sans-serif;
 }
 a{
     text-decoration: none;
@@ -582,4 +582,130 @@ section{
     width: 100%;
     font-size: 1.3rem;
     margin-bottom: 15px;
+}
+
+/*Footer*/
+.first-footer {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-container, .footer-container-v {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container h3, .footer-container-v h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-container ul, .footer-container-v ul {
+    padding: 0;
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.footer-container ul li, .footer-container-v ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    cursor: pointer;
+    
+}
+
+.footer-container ul li span:hover, .footer-container-v ul li span:hover{
+    border-bottom: 1px solid #555;
+}
+
+/*Second Footer*/
+.second-footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 100%;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+.footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 15px;
+    color: #333333;
+    font-size: 15px;
+}
+.footer-section select{
+    padding: 8px 35px;
+    border-radius: 10px;
+}
+.social-media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.social-media .social{
+    display: flex;
+    gap: 13px;
+}
+.social-media .social a img{
+    width: 40px;
+    border-radius: 50%;
+}
+.social-media .social a img:hover{
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*Footer Bottom*/
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    color: #333333;
+    padding: 25px;
+}
+.security-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.security-container .security{
+    margin-top: 35px;
+    display: flex;
+    gap: 13px;
+}
+.security img{
+    width: 50px;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.app-container .app{
+    display: flex;
+    margin-top: 35px;
+    gap: 13px;
+}
+.app img{
+    width: 130px;
 }
